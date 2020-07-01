@@ -22,16 +22,10 @@ const Contact = (props) => {
 
   return (
     <div className="wrapper">
-      <div className='Main'>
-        <div className='Main_title'>
-          <MainNav />
-          <h1>Contact Us</h1>
-        </div>
-      </div>
-      <div className='form'>
-        <Form initial={blank} handleSubmit = {handleCreate} />
-      </div>
-      <div className='testimonials'>
+      <section className='hero2'>
+        <div className='inner'>
+          <h1 className='testi_title'>Contact Us</h1>
+          <div className='testimonials'>
         <div className='testimonials_container'>
           <h1>Testimonials</h1>
           <p>Read more on <a href='https://www.yelp.com/biz/johns-furniture-upholstery-kaneohe'>Yelp</a></p>
@@ -53,7 +47,15 @@ const Contact = (props) => {
         </div>
 
       </div>
-      <Map />
+        </div>
+      </section>
+      <section className='side'>
+        <MainNav />
+        <Form initial={blank} handleSubmit = {handleCreate} className='form' />
+      </section>
+      <section className='hours'>
+        <Map />
+      </section>
     </div>
   )
 }

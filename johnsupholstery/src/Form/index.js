@@ -18,7 +18,7 @@ export default (props) => {
             <div class="row">
                 <form class="col s5">
                     <div class="row">
-                        <div class="input-field col s6">
+                        <div class="/">
                             <input 
                             type="text"
                             name="email"
@@ -35,13 +35,14 @@ export default (props) => {
                             onChange={handleChange}>
                             </input>
 
-                            <input 
+                            <textarea
+                            rows="4" cols="50" 
                             type="text"
                             name="message"
                             value={formData.message}
                             placeholder="Enter Message here..."
                             onChange={handleChange}>
-                            </input>
+                            </textarea>
 
                             <button className="btn" onClick={() => {
                             props.handleSubmit(formData);

@@ -1,6 +1,144 @@
 // @import url("https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css");
 
-#cards{
-    width: 30rem
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html{
+font-size: 10px; 
+}
+body {
+    box-sizing: border-box;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #ce8d4d;
+    background-color: #e1f3c9;
+}
+header {
+    position: absolute;
+    padding: 1em;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 2em);
+    background: white;
+}  
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.9rem;
 }
 
+a.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    padding: 1em;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+section {
+    padding: 1em;
+}
+
+section > h1 h2{
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+.clipper {
+    overflow: hidden;
+}
+.title{
+    font-size: 4rem;
+}
+section.hero {
+    padding-top: 8em;
+    background-color: #faea63;
+}
+section.hero2 {
+    padding-top: 0em;
+    background-color: #faea63;
+}
+.side-p {
+    width: 70%;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    align-content: center;
+}
+.main-p {
+    width: 70%;
+    font-size: 3rem;
+    margin-bottom: 0;
+    align-content: center;
+    font-style: italic;
+}
+.clipper > h2 {
+    font-size: 4rem;
+}
+section.side{
+    background-color: #e9d59c;
+}
+.hours-p{
+    font-size: 2rem;
+}
+.form{
+    padding-top: 10px;
+}
+.testimonials_container{
+    font-size: 2rem;
+}
+.testimonials_container > h1{
+    font-size: 3rem;
+}
+.testi_title{
+    font-size: 3.5rem;
+    text-align: center;
+}
+@media only screen and (min-width: 1020px) {
+
+    header {
+        background: none;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 70% auto;
+        grid-template-rows: 60% auto;
+        grid-template-areas:
+            "hero featured"
+            "hero subscribe";
+        height: 100vh;
+    }
+
+    section.hero {
+        grid-area: hero;
+    }
+    section.hero2 {
+        grid-area: hero;
+    }
+
+    section {
+        display: grid;
+        grid-template-rows: auto;
+        align-items: center;
+    }
+}

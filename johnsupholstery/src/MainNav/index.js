@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import {routes} from '../index'
+import "../App/style.scss";
 
 class MainNav extends React.Component{
     constructor(props){
@@ -11,16 +12,18 @@ class MainNav extends React.Component{
     }
     render(){
         return(
-            <section>
-                <ul>
-                    {
-                        this.state.routes.map((route) => {
-                            return (
-                                <li key={route.name}><Link to={route.path}>{route.name}</Link></li>
-                            )
-                        })
-                    }
-                </ul>
+            <section className='header'>
+                <nav>
+                    <ul className='nav'>
+                        {
+                            this.state.routes.map((route) => {
+                                return (
+                                    <li key={route.name}><Link className='link' to={route.path}>{route.name}</Link></li>
+                                )
+                            })
+                        }
+                    </ul>
+                </nav>
             </section>
         )
     }
