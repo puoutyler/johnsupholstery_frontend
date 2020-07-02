@@ -9,6 +9,12 @@ import Services from "./About"
 
 const routes = [
     {
+        path:"/",
+        exact: true,
+        component: App,
+        name: "Home"
+    },
+    {
         path:"/contact-us",
         component: Contact,
         name: "Contact Us"
@@ -17,11 +23,6 @@ const routes = [
         path:"/services",
         component: Services,
         name: "Services"
-    },
-    {
-        path:"/",
-        component: App,
-        name: "Home"
     },
 ]
 
@@ -35,6 +36,7 @@ ReactDOM.render(
                 routes.map((route) => {
                     return(
                         <Route 
+                            exact={route.exact}
                             path={route.path} 
                             component={route.component}
                             key={route.name}

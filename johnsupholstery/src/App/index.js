@@ -20,7 +20,7 @@ const App = (props) => {
         <>
         <div className='wrapper'>
             <section className='hero'>
-                <div className='inner'>
+                <div className='inner-main'>
                     <div className='clipper'>
                         <h1 className='title'>John's Upholstery</h1>
                     </div>

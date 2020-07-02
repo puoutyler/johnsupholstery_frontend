@@ -18,8 +18,9 @@ export default (props) => {
             <div class="row">
                 <form class="col s5">
                     <div class="row">
-                        <div class="/">
+                        <div class="form">
                             <input 
+                            className='input-text'
                             type="text"
                             name="email"
                             value={formData.email}
@@ -28,6 +29,7 @@ export default (props) => {
                             </input>
 
                             <input 
+                            className='input-text'
                             type="text"
                             name="fullName"
                             value={formData.fullName}
@@ -36,6 +38,7 @@ export default (props) => {
                             </input>
 
                             <textarea
+                            className='input'
                             rows="4" cols="50" 
                             type="text"
                             name="message"
@@ -44,7 +47,8 @@ export default (props) => {
                             onChange={handleChange}>
                             </textarea>
 
-                            <button className="btn" onClick={() => {
+                            <button
+                            onClick={() => {
                             props.handleSubmit(formData);
                             setFormData(props.initial);
                             }}>
