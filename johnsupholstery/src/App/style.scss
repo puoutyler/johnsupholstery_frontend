@@ -1,5 +1,6 @@
 // @import url("https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
 * {
     box-sizing: inherit;
@@ -88,13 +89,14 @@ section.hero2 {
     background-color: wheat
 }
 section.hero3 {
-    background-color: wheat
+    background-color: wheat;
 }
 .side-p {
     width: 70%;
     font-size: 1.5rem;
     margin-bottom: 0;
     align-content: center;
+    font-family: 'Muli', sans-serif;
 }
 // .side h1 {
 //     margin-bottom: -20px;
@@ -106,6 +108,7 @@ section.hero3 {
     margin-bottom: 0;
     align-content: center;
     font-style: italic;
+    font-family: 'Muli', sans-serif;
 }
 .clipper > h2 {
     font-size: 4rem;
@@ -115,6 +118,7 @@ section.side{
 }
 .hours-p{
     font-size: 2rem;
+    font-family: 'Muli', sans-serif;
 }
 .form{
     padding-top: 10px;
@@ -123,7 +127,7 @@ section.side{
     font-size: 2rem;
 }
 .testimonials_container > h1{
-    font-size: 3rem;
+    font-size: 5rem;
 }
 .testi_title{
     font-size: 3.5rem;
@@ -150,12 +154,14 @@ section.side{
 }
 .profiles img {
     align-content: center;
-    border: 3px solid white;
-    width: 15%;
+    border: 5px solid white;
+    width: 12%;
     border-radius: 50%;
+    padding: 10px;
 }
 .profiles h3 {
     text-align: center;
+    padding-bottom: 20px;
 }
 .input {
     display: flex;
@@ -197,6 +203,7 @@ section.side{
     font-size: 1.5rem;
     color: white;
     padding-top: 10px;
+    font-family: 'Muli', sans-serif;
 }
 .services{
     display: flex;
@@ -205,6 +212,24 @@ section.side{
 }
 .inner-main{
     background-color: #6a8f2fc4;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+.side {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+.hours {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+.contact-p{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Muli', sans-serif;
 }
 // .form{
 //     margin-top: -100px;
@@ -240,3 +265,11 @@ section.side{
         align-items: center;
     }
 }
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 

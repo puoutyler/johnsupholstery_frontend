@@ -44,6 +44,7 @@ const Contact = (props) => {
       <section className='side'>
         <MainNav />
         <h1 className='testi_title'>Contact Us</h1>
+        <p className='contact-p'>Just enter your name, email, and provide a phone number in your message. We will get back to you right away!</p>
         <Form initial={blank} handleSubmit = {handleCreate} className='form' />
       </section>
       <section className='hours'>
