@@ -32,7 +32,12 @@ header {
     color: black;
     font-size: 1.9rem;
 }
-
+.inner{
+    padding-bottom: 40px;
+}
+.clipper h2 {
+    padding-top: 30px;
+}
 a.logo {
     font-weight: bold;
     text-transform: uppercase;
@@ -230,6 +235,9 @@ section.side{
     font-size: 2rem;
     text-align: center;
     font-family: 'Muli', sans-serif;
+}
+.services-nav{
+    padding-top: 10px;
 }
 // .form{
 //     margin-top: -100px;

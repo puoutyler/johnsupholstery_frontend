@@ -29,7 +29,7 @@ class Services extends Component {
           </div>
         </section>
         <section className='side'>
-                <div className='inner'>
+                <div className='services-nav'>
                 <MainNav />
                     <div className='clipper'>
                         <h2>Upholstery is the Cornerstone of Our Business!</h2>

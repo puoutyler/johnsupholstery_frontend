@@ -46,14 +46,16 @@ export default (props) => {
                             placeholder="Enter Message here..."
                             onChange={handleChange}>
                             </textarea>
-
+                            
                             <button
-                            onClick={() => {
+                            onClick={(e) => {
+                            e.preventDefault()
                             props.handleSubmit(formData);
                             setFormData(props.initial);
                             }}>
                             Submit
                             </button>
+                            
                         </div>
                     </div>
                 </form>
