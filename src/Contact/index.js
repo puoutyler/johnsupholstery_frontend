@@ -7,7 +7,7 @@ import Testimonials from "../Carousel/index.js";
 
 const Contact = (props) => {
 
-  const [contact, setContact] = React.useState(null)
+  // const [contact, setContact] = React.useState(null)
 
   const blank = {
     fullName: '',
