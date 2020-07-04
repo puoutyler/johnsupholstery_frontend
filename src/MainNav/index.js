@@ -9,6 +9,7 @@ class MainNav extends React.Component{
         this.state = {
             routes: routes
         }
+        console.log(routes)
     }
     render(){
         return(

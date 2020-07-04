@@ -4,17 +4,9 @@
 import React from "react";
 import "./style.scss";
 import MainNav from '../MainNav';
-import Form from '../Form/index.js'
 
 
 const App = (props) => {
-    
-    const handleCreate = async (data) => {
-        const response = await fetch('http://localhost:3000/johnsupholstery', {
-            method: 'POST',
-            body: JSON.stringify(data)
-        })
-    }
 
     return(
         <>

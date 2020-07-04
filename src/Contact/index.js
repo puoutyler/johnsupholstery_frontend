@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import MainNav from '../MainNav'
 import Form from '../Form/index.js'
 import Map from '../Map/index.js'
@@ -7,7 +7,7 @@ import Testimonials from "../Carousel/index.js";
 
 const Contact = (props) => {
 
-  const [contact, setContact] = React.useState(null)
+  // const [contact, setContact] = React.useState(null)
 
   const blank = {
     fullName: '',

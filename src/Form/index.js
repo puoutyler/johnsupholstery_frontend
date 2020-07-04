@@ -15,10 +15,10 @@ export default (props) => {
 
     return (
         <div>
-            <div class="row">
-                <form class="col s5">
-                    <div class="row">
-                        <div class="form">
+            <div className="row">
+                <form className="col s5">
+                    <div className="row">
+                        <div className="form">
                             <input 
                             className='input-text'
                             type="text"
