@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import {Router, Route, Switch} from "react-router"
 import { createBrowserHistory } from "history"
-import {routes} from './routes.js';//
+import {routes} from './routes.js';
 
 
 const root = document.getElementById('root');
