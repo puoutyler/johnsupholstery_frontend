@@ -18,7 +18,7 @@ const Contact = (props) => {
 
 
   const handleCreate = async (data) => {
-    const response = await fetch('https://johnsupholstery-backend.herokuapp.com/johnsupholstery', {
+    const response = await fetch('http://https://johnsupholstery-backend.herokuapp.com/johnsupholstery', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
