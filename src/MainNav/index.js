@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {routes} from '../index'
+import {routes} from '../routes'
 import "../App/style.scss";
 
 class MainNav extends React.Component{
